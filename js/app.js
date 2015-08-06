@@ -13,7 +13,7 @@ function($routeProvider){
             templateUrl:'partials/user-info.html',
             controller: 'new-userController'
         }).
-        when('/userlist',
+        when('/user/userlist',
         {
             templateUrl:'partials/user-list.html',
             controller: 'userController'
