@@ -1,0 +1,50 @@
+[
+  {
+    "firstName": "Antonina",
+    "lastName": "Malyarenko",
+    "school": "Engineering",
+    "major": "Computer Science",
+    "universityRank":"Senior",
+    "age": "20"
+  },
+  {
+    "firstName": "Morgan",
+    "lastName": "Zander",
+    "school": "LSA",
+    "major": "Organizational Studies",
+    "universityRank":"Senior",
+    "age": "20"
+  },
+  {
+    "firstName": "Courtney",
+    "lastName": "Fietsam",
+    "school": "Ross School of Business",
+    "major": "Business",
+    "universityRank":"Junior",
+    "age": "21"
+  },
+  {
+    "firstName": "Rishi",
+    "lastName": "Purekar",
+    "school": "LSA",
+    "major": "Computer Science",
+    "universityRank":"Senior",
+    "age": "20"
+  },
+  {
+    "firstName": "Julianne",
+    "lastName": "Fava",
+    "school": "LSA",
+    "major": "Biology",
+    "universityRank":"Freshman",
+    "age": "18"
+  },
+  {
+    "firstName": "Forest",
+    "lastName": "Burczak",
+    "school": "Ross School of Business",
+    "major": "Business",
+    "universityRank":"Senior",
+    "age": "21"
+  }
+]

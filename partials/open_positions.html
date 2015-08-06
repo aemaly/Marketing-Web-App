@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<div ng-controller="positionController">
+    Search:<input ng-model="query" type="text"/>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr ng-repeat="person in people | filter:query | orderBy:'age'">
+            <td>{{person.name}}</td>
+            <td>{{person.age}}</td>
+        </tr>
+    </table>
+
+</div>
+
+
+<body>
+
+</body>
+</html>

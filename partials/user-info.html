@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<div ng-controller= "userController" >
+    <form ng-submit="submit()">
+        <label>First name:</label>
+        <input autofocus ng-model="formData.firstName" type="text" name="FirstName" />
+        <br>
+        <label>Last name:</label>
+        <input ng-model="formData.lastName" type="text" name="LastName"/>
+        <input ng-model="formData.firstName" type="text" name="FirstName" />
+        <br>
+        <label>Last name:</label>
+        <input ng-model="formData.lastName" type="text" name="LastName"/>
+        <input type="submit" id="submit" value="Submit"/>
+        Hello {{formData.firstName}} {{formData.lastName}}
+
+    </form>
+    <pre>{{formData}}</pre>
+    <pre>list={{list}}</pre>
+</div>
+
+
+</html>

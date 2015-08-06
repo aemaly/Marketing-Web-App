@@ -1,0 +1,19 @@
+{
+  "name": "marketing-web-app",
+  "version": "1.0.0",
+  "description": "Web App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aemaly/Marketing-Web-App.git"
+  },
+  "author": "Antonina Malyarenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aemaly/Marketing-Web-App/issues"
+  },
+  "homepage": "https://github.com/aemaly/Marketing-Web-App#readme"
+}
