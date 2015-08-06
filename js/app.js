@@ -2,26 +2,30 @@
  * Created by Antonina_Malyarenko on 8/3/2015.
  */
 var marketingApp = angular.module('marketingApp', [
-    'ngRoute',
-    'marketingControllers'
+    'ngRoute'
 ]);
 
 marketingApp.config(['$routeProvider',
-function($routeRovider){
+function($routeProvider){
     $routeProvider.
         when('/user',
         {
             templateUrl:'partials/user-info.html',
-            controller: 'userController'
+            controller: 'new-userController'
         }).
-        when('/positions',
+        when('/userlist',
         {
-            templateUrl:'partials.open_positions.html',
-            controller: 'peopleController'
+            templateUrl:'partials/user-list.html',
+            controller: 'userController'
 
         }).
+        when('/home',
+        {
+            templateUrl:'partials/home_page.html',
+            controller:'homeController'
+        }).
         otherwise({
-            redirectTo:'/'
-        })
+            redirectTo:'/home'
+        });
 }]);
 

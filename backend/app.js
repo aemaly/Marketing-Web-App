@@ -4,7 +4,8 @@
 var express = require('express');
 var app = express();
 
-app.get('/', function (req, res) {
+app.post('/user', function (req, res) {
+    var data = req.body;
     res.send('Hello World!');
 });
 

@@ -1,25 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="marketingApp">
 
 
-<div ng-controller= "userController" >
-    <form ng-submit="submit()">
-        <label>First name:</label>
-        <input autofocus ng-model="formData.firstName" type="text" name="FirstName" />
-        <br>
-        <label>Last name:</label>
-        <input ng-model="formData.lastName" type="text" name="LastName"/>
-        <input ng-model="formData.firstName" type="text" name="FirstName" />
-        <br>
-        <label>Last name:</label>
-        <input ng-model="formData.lastName" type="text" name="LastName"/>
-        <input type="submit" id="submit" value="Submit"/>
-        Hello {{formData.firstName}} {{formData.lastName}}
+<body>
+
+    <div ng-submit="submit()">
+        <div class="form-group">
+            <label>First name:</label>
+                <input autofocus ng-model="formData.firstName" type="text" name="FirstName" />
+        </div>
+
+        <div class="form-group">
+            <label>Last name:</label>
+                <input ng-model="formData.lastName" type="text" name="LastName"/>
+        </div>
+
+        <div class="form-group">
+            <label>School:</label>
+                <input ng-model="formData.school" type="text" name="School"/>
+        </div>
+
+        <div class="form-group">
+            <label>Major:</label>
+                <input ng-model="formData.major" type="text" name="Major"/>
+        </div>
+
+        <div class="form-group">
+            <label>University Rank:</label>
+                <input ng-model="formData.universityRank" type="text" name="UniversityRank"/>
+        </div>
+
+        <div class="form-group">
+            <label>Age:</label>
+                <input ng-model="formData.age" type="text" name="Age"/>
+        </div>
+
+        <input type="submit" class="btn btn-default" id="submit" value="Submit"/>
+
 
     </form>
-    <pre>{{formData}}</pre>
-    <pre>list={{list}}</pre>
+    <div>Hello {{formData.firstName}} {{formData.lastName}}</div>
+    <div>{{formData}}</div>
+    <div>list={{list}}</div>
 </div>
 
+</body>
 
 </html>

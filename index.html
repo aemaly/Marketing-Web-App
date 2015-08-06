@@ -7,49 +7,41 @@
         Marketing Web Application
     </title>
 
-
+    <!-- Outside Materials -->
     <script src="js/angular.min.js"></script>
     <script src="js/angular-route.min.js"></script>
     <script src="jquery/dist/jquery.min.js"></script>
 
+    <!-- Local Materials -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers/controllers.js"></script>
+    <script src="css/bootstrap/dist/js/bootstrap.min.js"></script>
 
-
-
-
-
-
-
-
-        nameApp.controller('PersonCtrl',function($scope, $http){
-            $http.get('people.json').success(function(data){
-                $scope.people = data;
-            });
-
-        });
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap.min.css">
 
 </head>
 
+<body>
+<nav class="navbar navbar-default navbar-static-top">
+    <h1>Marketing Club Web App</h1>
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#/home">Home</a></li>
+            <li><a data-toggle="tab" href="#/user">New User Form</a></li>
+            <li><a data-toggle="tab" href="#/userlist">List of Users</a></li>
+        </ul>
+    </div>
 
 
 
-<body ng-view>
+</nav>
 
 
-<div ng-controller="PersonCtrl">
-    Search:<input ng-model="query" type="text"/>
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Age</th>
-        </tr>
-        <tr ng-repeat="person in people | filter:query | orderBy:'age'">
-        <td>{{person.name}}</td>
-        <td>{{person.age}}</td>
-        </tr>
-    </table>
 
-</div>
+
+<div ng-view></div>
+
 
 </body>
 </html>
