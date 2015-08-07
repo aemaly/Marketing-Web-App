@@ -24,6 +24,11 @@ function($routeProvider){
             templateUrl:'partials/home_page.html',
             controller:'homeController'
         }).
+        when('/positions',
+        {
+            templateUrl:'partials/open_positions.html',
+            controller:'positionController'
+        }).
         otherwise({
             redirectTo:'/home'
         });

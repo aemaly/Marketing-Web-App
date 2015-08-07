@@ -18,22 +18,33 @@
     <script src="css/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap.css">
 
-</head>
+
 
 <body>
-<nav class="navbar navbar-default navbar-static-top">
-    <div class="container">
-    <h1>Marketing Club Web App</h1>
+    <div class="container-fluid" style="background:#00274c; padding: 1.5em;">
+        <div class="navbar-header">
+            <h1 style="font-family:Arial,Helvetica,sans-serif;display: inline; margin-bottom:2em
+             color: #eeeeee;">Club Screen Wolverine</h1>
+        </div>
+        <ul class="nav nav-tabs" style="display:inline;">
+            <li><a data-toggle="tab" href="#/home" style= "color:#ffcb05">Home</a></li>
+            <li><a data-toggle="tab" href="#/user" style= "color:#ffcb05">New User Form</a></li>
+            <li><a data-toggle="tab" href="#/user/userlist" style= "color:#ffcb05">User List</a></li>
 
-        <ul class="nav nav-tabs">
-            <li><a data-toggle="tab" href="#/home">Home</a></li>
-            <li><a data-toggle="tab" href="#/user">New User Form</a></li>
-            <li><a data-toggle="tab" href="#/user/userlist">User List</a></li>
+            <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style= "color:#ffcb05">
+                    Dropdown <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a data-toggle="tab" href="#/home">Home</a></li>
+                    <li><a data-toggle="tab" href="#/positions">Club Positions/Freelance Work</a></li>
+                    <li><a data-toggle="tab" href="#/user/userlist">User List</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
-</nav>
 
 
 

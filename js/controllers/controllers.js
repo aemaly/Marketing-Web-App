@@ -10,6 +10,14 @@ marketingApp.controller('userController', ['$scope', '$http',
 
     }]);
 
+marketingApp.controller('positionController', ['$scope', '$http',
+    function ($scope, $http) {
+        $http.get('json/open_positions.json').success(function(data) {
+            $scope.positions = data;
+        });
+
+    }]);
+
 marketingApp.controller('new-userController',function($scope, $http){
     $scope.list = [];
     $scope.formData = {};

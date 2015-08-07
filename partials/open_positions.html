@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="marketingApp">
+
+
+
+<body>
+<div>
+    Search:<input ng-model="query" type="text"/>
+
+        <div class="panel panel-default" ng-repeat="position in positions | filter:query | orderBy:'date'">
+            <div class="panel-body">
+            <p>{{position.title}}</p>
+            <p>{{position.poster}}</p>
+            <p>{{position.date}}</p>
+            <p>{{position.category}}</p>
+            <p>{{position.numApplications}}</p>
+            <p>{{position.description}}</p>
+            </div>
+        </div>
+
+
+</div>
+
+
+
+
+</body>
+</html>
